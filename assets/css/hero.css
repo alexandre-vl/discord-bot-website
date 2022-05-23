@@ -1,0 +1,23 @@
+.hero h1{
+    text-align: center;
+    font-size: 50px;
+    color:#ffffff;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.hero{
+    
+}
+
+#myVideo {
+
+    position: fixed;
+    right: 0;
+    top: 80px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
