@@ -1,23 +1,36 @@
 .hero h1{
-    text-align: center;
+    text-align: left;
+    margin-left: 3%;
     font-size: 50px;
-    color:#ffffff;
-    height: 100px;
-    line-height: 100px;
-    text-align: center;
+    color:#f7f4ff;
+/*     height: 100px; */
     margin-top: 10vh;
 }
 
-.hero{
-    
+.hero p{
+    text-align: left;
+    margin-left: 3%;
+    font-size: 30px;
+    color: #cac8d1;
+  /*   height: 100px; */
+    margin-top: 2vh; 
 }
 
-#myVideo {
+.help {
+    transform: rotate3d(0, 1, 0, 40deg);
+}
 
-    position: fixed;
-    right: 0;
-    top: 80px;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
+
+@media (max-width: 768px) {
+    .hero h1 {
+            text-align: left;
+        font-size: 30px;
+        width: 90%;
+    }
+
+    .hero p {
+        font-size: 20px;
+        width:90%;
+    }
+
 }

@@ -11,18 +11,30 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #5865f2;
+/*     background-color: #5865f2; */
     color: #fff;
 }
 
 .nav-links a {
-    color: #fff;
+    color: #f7f4ff;
     padding: 10px 10px;
 }
 
 .logo {
     font-family: "uni_sansheavy_caps";
     font-size: 32px;
+}
+
+.logo::before {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    background-image: url('../imgs/BotLogo.svg');
+    background-size: 40px 40px;
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+
 }
 
 .menu {
@@ -38,7 +50,7 @@
 }
 
 .nav-links a:hover{
-    color: #292841;
+    color: #5d707e;
     transition: 0.3s ease;
 }
 
@@ -70,7 +82,8 @@
 }
 
 .dropdown li:hover {
-    background-color: #5865f2;
+    color:#5d707e;
+/*     background-color: #5865f2; */
 }
 
 .links:hover .dropdown {
@@ -95,7 +108,7 @@ input[type=checkbox] {
     .menu {
         display: none;
         position: absolute;
-        background-color: #5865f2;
+         background-color: #a34ffe; 
         right: 0;
         left: 0;
         text-align: center;
@@ -104,7 +117,7 @@ input[type=checkbox] {
 
     .menu li:hover {
         display: inline-block;
-        background-color: #5865f2;
+         background-color: #a34ffe; 
         transition: 0.3s ease;
     }
 
