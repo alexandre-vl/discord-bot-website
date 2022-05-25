@@ -35,15 +35,18 @@
     margin-top: 10vh;
     perspective: 484px;
     border-radius: 10px;
+    filter: drop-shadow(0 0 0.75rem rgb(63, 51, 53));
     transform: scale(1) perspective(1000px) rotateX(23deg) rotateY(-23deg) rotate(15deg) translateX(-35px);
     transition: all 0.2s ease-out;
+    
 }
 
 .help:hover {
     width: 100%;
     -webkit-perspective: 0;
     perspective: 0;
-    transform: scale(1) rotateX(0) rotateY(0) rotateZ(0) translateX(35px)
+    transform: scale(1) rotateX(0) rotateY(0) rotateZ(0) translateX(35px);
+
 }
 
 
