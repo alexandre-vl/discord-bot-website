@@ -1,0 +1,40 @@
+
+
+.ft-list{
+    display: flex;
+    flex-wrap: wrap;
+/*     justify-content: space-between; */
+    gap: 40px 140px;
+    margin-left: 6%;
+    margin-right: 6%;
+
+}
+
+.card {
+    background-color: #202225;
+    border-radius: 26px;
+    padding: 40px 40px;
+    height: 300px;
+    width: 400px;
+    margin: 10px;
+    flex: 1 0 20%; 
+    min-width: 400px;
+
+}
+
+.card-main {
+    background-color: #202225;
+    border-radius: 26px;
+    padding: 40px 40px;
+}
+
+.card-title {
+    margin: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #f7f4ff;
+}
+
+.card-desc {
+    color: #f7f4ff;
+}

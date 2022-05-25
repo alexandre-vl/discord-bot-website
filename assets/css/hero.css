@@ -1,6 +1,13 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-right: 8%;
+}
+
 .hero h1{
     text-align: left;
-    margin-left: 3%;
     font-size: 50px;
     color:#f7f4ff;
 /*     height: 100px; */
@@ -9,15 +16,51 @@
 
 .hero p{
     text-align: left;
-    margin-left: 3%;
     font-size: 30px;
     color: #cac8d1;
   /*   height: 100px; */
     margin-top: 2vh; 
 }
 
+.titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    margin-top: 5%;
+}
+
 .help {
-    transform: rotate3d(0, 1, 0, 40deg);
+    margin-top: 10vh;
+    perspective: 484px;
+    border-radius: 10px;
+    transform: scale(1) perspective(1000px) rotateX(23deg) rotateY(-23deg) rotate(15deg) translateX(-35px);
+    transition: all 0.2s ease-out;
+}
+
+.help:hover {
+    width: 100%;
+    -webkit-perspective: 0;
+    perspective: 0;
+    transform: scale(1) rotateX(0) rotateY(0) rotateZ(0) translateX(35px)
+}
+
+
+
+.blue-button {
+    display: inline-block;
+/*     font-family: Whitney, "Open Sans", Helvetica, sans-serif; */
+    font-weight: 400;
+    font-size: 11pt;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 45px;
+    width: 150px;
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    background-color: #7289da;
+    border: 2px solid #7289da;
+    color: #fff;
 }
 
 
@@ -31,6 +74,19 @@
     .hero p {
         font-size: 20px;
         width:90%;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .help {
+        display: none;
+        margin-left: -6%;
+        width: 100%;
+        -webkit-perspective: 0;
+        perspective: 0;
+        transform: scale(1) rotateX(0) rotateY(0) rotateZ(0) translateX(35px)
     }
 
 }

@@ -18,6 +18,7 @@
 .nav-links a {
     color: #f7f4ff;
     padding: 10px 10px;
+    font-weight: bold;
 }
 
 .logo {
@@ -38,9 +39,12 @@
 }
 
 .menu {
+    
     display: flex;
     gap: 1em;
     font-size: 18px;
+    height: 100%;
+    z-index: 2;
 }
 
 .menu li:hover {
@@ -67,8 +71,9 @@
     padding: 1em 0;
     position: absolute;
     display: none;
-    border-radius: 1px;
+    border-radius: 10px;
     top: 35px;
+    z-index: 2;
 }
 
 .dropdown li+li {
@@ -108,16 +113,19 @@ input[type=checkbox] {
     .menu {
         display: none;
         position: absolute;
-         background-color: #a34ffe; 
+        background-color: #001220; 
         right: 0;
         left: 0;
         text-align: center;
-        padding: 16px 0;
+        padding: 20vh 0;
+/*         margin-top: 2vh; */
+        position: fixed;
+        top: 0;
+        width: 100%;
     }
 
     .menu li:hover {
         display: inline-block;
-         background-color: #a34ffe; 
         transition: 0.3s ease;
     }
 

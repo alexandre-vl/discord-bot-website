@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 
 * {
     margin: 0;
@@ -5,18 +7,18 @@
     box-sizing: border-box;
 }
 body {
-    font-family: Whitney,
+    font-family: "Montserrat",
+        sans-serif;/* Whitney,
             Helvetica Neue,
             Helvetica,
             Arial,
-            sans-serif;
+            sans-serif; */
         ;
     
     background-color: #001220;
     background-image: url("../imgs/banner.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    perspective: 800px;
 }
 a {
     text-decoration: none;
@@ -24,6 +26,19 @@ a {
 li {
    
     list-style: none;
+}
+
+.head {
+    height: 100vh;
+}
+
+.features {
+    margin-top: 3vh;
+    height: 100vh;
+}
+
+.stats {
+    height: 100vh;
 }
 
 
